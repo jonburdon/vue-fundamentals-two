@@ -30,7 +30,7 @@ Create a snap game using cat emojis by refactoring and using ideas from the tuto
 5. [ ] Display the 3 images one at a time, with a 3 second pause
 
 ### Current Issues
-1. Stuck on step 1 of the plan! How to display 3 different images - See emojisnap2.js Line 9
+~ 1. Stuck on step 1 of the plan! How to display 3 different images - See emojisnap2.js Line 9~ 
 2. Similar to above, how to display the data as html in line 3 of emojisnap3.js
 3. In emojisnap.html This is a refactored version of schrodingers-div.html to display one unclickable random cat emoji. In line 107 it also creates a variable matched to the index of the selected emoji. The idea was to use that variable to match the emoji selected.
 
