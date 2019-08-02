@@ -25,7 +25,7 @@
 	--purple     : #981ceb;
 	--black      : #000000;
 
-	font: 1rem/1.175 "BlinkMacSystemFont", -apple-system, "Roboto", sans-serif;
+	font: 0.5rem/1.175 "BlinkMacSystemFont", -apple-system, "Roboto", sans-serif;
 }
 
 .app {
@@ -70,7 +70,6 @@ img {
 
                 <span v-for="n in this.alive_cats">
                         <cats></cats>
-                    <!-- <span>Hi</span> -->
                     <!-- <span
 					v-html="this.alive_cats[n]"
 				></span> -->
@@ -111,7 +110,7 @@ function randcat(...arr) {
 
 
 Vue.component("cats", {
-    template: `<p v-html="this.cat"></p>`
+    template: `<p v-html="this.alive_cats"></p>`
     })
 
 var app = new Vue({
