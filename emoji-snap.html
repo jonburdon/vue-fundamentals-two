@@ -66,14 +66,29 @@ img {
 					@click="quantum_fluctuation()"
                 ></span> -->
                 <br>
-                Your emoji is: <span v-html="cat"></span>
-			</p>
+                Your emoji is: <span v-html="cat"></span><br>
+                Your choices are:<br>
+
+                <span v-for="n in this.alive_cats">
+                        <cats></cats>
+                    <!-- <span>Hi</span> -->
+                    <!-- <span
+					v-html="this.alive_cats[n]"
+				></span> -->
+                <!-- <span v-html="cat"></span> -->
+                </span>
+                
+
+
+            </p>
+            
 		</div>
 
 		<script>
 
 "use strict"
 let my_cat;
+let cat_snap;
 // emojify returns the corresponding emoji image
 function emojify(name) {
 	var out = `<img src="emojis/` + name + `.png">`
@@ -83,14 +98,22 @@ function emojify(name) {
 // rand returns a random item from an array
 function rand(...arr) {
 	var x = Math.floor(Math.random() * arr.length)
-    my_cat = x;
-    console.log(my_cat)
 	return arr[x]
 }
-function randcat() {
-	var x = Math.floor(Math.random() * 9)
-	return x
+
+// Generate a random cat emoji and asign it's index number to my_cat for reference later.
+function randcat(...arr) {
+	var x = Math.floor(Math.random() * arr.length)
+    my_cat = x;
+    console.log(my_cat)
+    console.log(arr[x])
+	return arr[x]
 }
+
+
+Vue.component("cats", {
+    template: `<p v-html="this.cat"></p>`
+    })
 
 var app = new Vue({
 	el: ".app",
@@ -115,9 +138,7 @@ var app = new Vue({
 	methods: {
 		// is_open returns whether the box is open
 		is_open: function () {
-            
-            
-			return this.cat = rand(...this.alive_cats)
+			return this.cat = randcat(...this.alive_cats)
 		},
 		// is_alive returns whether the cat is alive
 		is_alive: function () {

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+    
+        <div id="app">
+            
+                <!-- Loop through item in grocery list and create instance of component each time -->
+                <!-- Pass the item down to the component as the todo prop -->
+                <todo-item
+                    v-for="item in catList"
+                    v-bind:catselect="item"
+                    v-bind:key="item.id">
+               </todo-item>
+            
+        </div>
+        <!-- https://vuejs.org/v2/guide/list.html#key -->
+        <script src="emojisnap.js"></script>
+    </body>
+</html>
+
