@@ -28,11 +28,11 @@ Create a snap game using cat emojis using the tutorial code.
 3. In emojisnap.html This is a refactored version of schrodingers-div.html to display one unclickable random cat emoji. In line 107 it also creates a variable matched to the index of the selected emoji. The idea was to use that variable to match the emoji selected.
 
 ### Possible Project Plan for Emoji Snap
-1 [ ] Display 3 images
-2 [ ] Display the above images in a random order
-3 [ ] Display one of the images again as a special 'snap' image
-4 [ ] Make the 3 images clickable, the one which matches the 'snap' image when clicked will generate a win
-5 [ ] Display the 3 images one at a time, with a 3 second pause
+1. [ ] Display 3 images
+2. [ ] Display the above images in a random order
+3. [ ] Display one of the images again as a special 'snap' image
+4. [ ] Make the 3 images clickable, the one which matches the 'snap' image when clicked will generate a win
+5. [ ] Display the 3 images one at a time, with a 3 second pause
 
 
 
