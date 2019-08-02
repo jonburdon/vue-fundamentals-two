@@ -6,7 +6,6 @@ function emojify(name) {
 
 Vue.component('cat-list', {
   props: ['catselect'],
-  // template: '<li>{{ catselect.text }}</li>'
   template: `<img :src="catselect.text" />`
 
 // ISSUE - how to display 3 different images in Line 9? Syntax from Line 10 won't work
