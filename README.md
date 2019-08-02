@@ -1,5 +1,7 @@
 # Vue Learning Project 2
 
+## View on Github Pages https://jonburdon.github.io/vue-fundamentals-two/
+
 ## Learning Fundamentals of Vue Frameworks - part 2
 
 ## Project Aims
