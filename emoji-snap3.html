@@ -6,18 +6,20 @@
     <body>
     
         <div id="app">
-            
+            <ol>
                 <!-- Loop through item in grocery list and create instance of component each time -->
                 <!-- Pass the item down to the component as the todo prop -->
-                <cat-list
+                <todo-item
                     v-for="item in catList"
-                    v-bind:catselect="item"
+                    v-bind:todo="item"
                     v-bind:key="item.id">
-               </cat-list>
-            
+               </todo-item>
+            </ol>
         </div>
         <!-- https://vuejs.org/v2/guide/list.html#key -->
-        <script src="emojisnap2.js"></script>
+        <script src="emojisnap3.js"></script>
     </body>
 </html>
+
+
 

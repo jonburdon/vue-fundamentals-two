@@ -1,7 +1,7 @@
 Vue.component('todo-item', {
     props: ['catselect'],
-    // template: '<li>{{ catselect.text }}</li>'
-    template: `<img src="emojis/cat--smile.png">`
+    template: '<li>{{ catselect.text }}</li>'
+    // template: `<img src="emojis/cat--smile.png">`
     // template: `<img src="emojis/` + {{catselect.text}} + `.png">`
     // template: '<img src="{{ catselect.text }}.png">'
     // `<img src="emojis/` + {{catselect.text}} + `.png">`
